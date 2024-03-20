@@ -9,7 +9,8 @@ Original file is located at
 ##### Create list by List Comprehension
 """
 
-mylist = [_ for _ in "ABCDEFGHIJKLM"]
+
+mylist = list("ABCDEFGHIJKLM")
 mylist
 
 """##### Adds an item at the end of the list --> append()"""
@@ -75,7 +76,7 @@ print(newlist)
 
 """##### Getting index and items at those indexes from the list"""
 
-for idx in range(0,len(mylist)):
+for idx in range(len(mylist)):
   print(f"mylist[{idx}] = {mylist[idx]}")
 
 """##### Get Reverse Indexing index"""
